@@ -1,0 +1,30 @@
+:root {
+  --font-size-404: 4vh;
+}
+
+.pageNotFound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: var(--padding-page-v) var(--padding-page-h);
+  background-color: var(--color-bg-page);
+}
+
+.pageNotFound > img {
+  height: 50vh;
+  margin-bottom: var(--font-size-404);
+}
+
+.pageNotFound > p {
+  font-size: var(--font-size-404);
+  line-height: calc(var(--font-size-404) + var(--line-height));
+  text-align: center;
+  color: var(--color-text-negative);
+}

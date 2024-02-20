@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+}
+
+.footer > p {
+  text-align: center;
+  box-sizing: border-box;
+  margin: var(--margin-s) var(--padding-page-h) 0 var(--padding-page-h);
+  padding: var(--margin-m) var(--padding-page-h);
+  background-color: var(--color-bg-text);
+  border-radius: var(--border-radius);
+}

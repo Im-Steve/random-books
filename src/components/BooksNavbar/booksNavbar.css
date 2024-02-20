@@ -1,0 +1,65 @@
+.booksNavbar-arrow {
+  color: var(--color-icon-nav);
+  height: var(--navbar-icon-height);
+  width: auto;
+  z-index: 902;
+}
+
+.booksNavbar-icon-left,
+.booksNavbar-icon-right,
+.booksNavbar-arrow-left,
+.booksNavbar-arrow-right {
+  position: fixed;
+}
+
+.booksNavbar-icon-left, .booksNavbar-icon-right {
+  top: var(--navbar-box-margin);
+}
+
+.booksNavbar-arrow-left, .booksNavbar-arrow-right {
+  top: calc((var(--navbar-height) - var(--navbar-icon-height)) / 2);
+}
+
+@media (orientation: portrait) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 1.25%);
+  }
+
+  .booksNavbar-icon-right {
+    right: calc((var(--navbar-icon-height) / 2) + 1.25%);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 1.25%;
+  }
+
+  .booksNavbar-arrow-right {
+    right: 1.25%;
+  }
+}
+
+@media (orientation: landscape) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 5% + 3px);
+  }
+
+  .booksNavbar-icon-right {
+    right: calc((var(--navbar-icon-height) / 2) + 5% + 3px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 5%;
+  }
+
+  .booksNavbar-arrow-right {
+    right: 5%;
+  }
+}
+
+.icon-options-open {
+  color: var(--color-second);
+}
+
+.icon-likes-open {
+  color: var(--red);
+}

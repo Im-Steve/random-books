@@ -1,0 +1,90 @@
+[
+  {
+    "value": "palmares",
+    "displayName": "Palmarès"
+  },
+  {
+    "value": "nouveautes",
+    "displayName": "Nouveautés"
+  },
+  {
+    "value": "litterature",
+    "displayName": "Littérature"
+  },
+  {
+    "value": "biographies",
+    "displayName": "Biographies"
+  },
+  {
+    "value": "jeunesse",
+    "displayName": "Jeunesse"
+  },
+  {
+    "value": "bande-dessinee",
+    "displayName": "Bande dessinée"
+  },
+  {
+    "value": "essais",
+    "displayName": "Essais"
+  },
+  {
+    "value": "science-technologie",
+    "displayName": "Science/Technologie"
+  },
+  {
+    "value": "faune-flore",
+    "displayName": "Faune/Flore"
+  },
+  {
+    "value": "psychologie",
+    "displayName": "Psychologie"
+  },
+  {
+    "value": "sante",
+    "displayName": "Santé"
+  },
+  {
+    "value": "vie-pratique",
+    "displayName": "Vie pratique"
+  },
+  {
+    "value": "cuisine",
+    "displayName": "Cuisine"
+  },
+  {
+    "value": "loisirs",
+    "displayName": "Loisirs"
+  },
+  {
+    "value": "sports",
+    "displayName": "Sports"
+  },
+  {
+    "value": "affaires-et-communications",
+    "displayName": "Affaires et communications"
+  },
+  {
+    "value": "informatique",
+    "displayName": "Informatique"
+  },
+  {
+    "value": "spiritualite-religion",
+    "displayName": "Spiritualité/Religion"
+  },
+  {
+    "value": "esoterisme",
+    "displayName": "Ésotérisme"
+  },
+  {
+    "value": "voyages",
+    "displayName": "Voyages"
+  },
+  {
+    "value": "langues",
+    "displayName": "Langues"
+  },
+  {
+    "value": "arts",
+    "displayName": "Arts"
+  }
+]

@@ -1,0 +1,85 @@
+:root {
+  --slidingBook-duration: 0.5s;
+}
+
+.slidingBook-media {
+  min-height: calc(100vh - var(--navbar-height));
+  width: 100%;
+}
+
+.slidingBook-left,
+.slidingBook-center,
+.slidingBook-right {
+  top: var(--navbar-height);
+  width: 100%;
+}
+
+.slidingBook-left {
+  position: fixed;
+  left: -100%;
+}
+
+.slidingBook-center {
+  position: absolute;
+  left: 0;
+}
+
+.slidingBook-right {
+  position: fixed;
+  left: 100%;
+}
+
+.slidingBook-center-to-left {
+  animation: slidingBookCenterToLeft var(--slidingBook-duration) forwards;
+}
+
+.slidingBook-right-to-center {
+  animation: slidingBookRightToCenter var(--slidingBook-duration) forwards;
+}
+
+.slidingBook-left-to-center {
+  animation: slidingBookLeftToCenter var(--slidingBook-duration) forwards;
+}
+
+.slidingBook-center-to-right {
+  animation: slidingBookCenterToRight var(--slidingBook-duration) forwards;
+}
+
+@keyframes slidingBookCenterToLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slidingBookRightToCenter {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+
+  }
+}
+
+@keyframes slidingBookLeftToCenter {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+
+  }
+}
+
+@keyframes slidingBookCenterToRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+
+  }
+}

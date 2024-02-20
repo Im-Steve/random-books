@@ -1,0 +1,127 @@
+.home-bg {
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.home-layer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: var(--shadow);
+  z-index: -1;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--margin-l) var(--padding-page-h);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home > * {
+  margin-bottom: var(--margin-m);
+}
+
+.home > :last-child {
+  margin: 0;
+}
+
+.home-h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-h1 > p {
+  font-family: 'Parisienne';
+  color: var(--color-main);
+}
+
+
+.home-h2 > p {
+  font-family: 'MoonTime';
+  color: var(--color-text-negative);
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-second), 0 0 70px var(--color-second), 0 0 80px var(--color-second), 0 0 100px var(--color-second), 0 0 150px var(--color-second);
+}
+
+@media (orientation: portrait) {
+  .home-h1 > img {
+    width: 16vw;
+    height: 16vw;
+    margin-right: 2vw;
+  }
+
+  .home-h1 > p {
+    font-size: 16vw;
+    line-height: 22vw;
+  }
+
+  .home-h2 > p {
+    font-size: 18vw;
+    line-height: 18vw;
+    margin-top: -2vw;
+  }
+}
+
+@media (orientation: landscape) {
+  .home-h1 > img {
+    width: 16vh;
+    height: 16vh;
+    margin-right: 2vh;
+  }
+
+  .home-h1 > p {
+    font-size: 16vh;
+    line-height: 22vh;
+  }
+
+  .home-h2 > p {
+    font-size: 14vh;
+    line-height: 14vh;
+    margin-top: -2vh;
+  }
+}
+
+.home-form {
+  width: 100%;
+  max-width: var(--tab-max-width);
+  box-sizing: border-box;
+  padding: var(--padding-page-v);
+  padding-top: calc(var(--padding-page-v) - 5px);
+  border-radius: var(--border-radius);
+  background: var(--shadow-dark);
+}
+
+.home-footer {
+  color: var(--color-text-negative);
+  border-radius: var(--border-radius);
+  background: var(--shadow-dark);
+  padding: var(--margin-s);
+  text-decoration: none;
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .home-footer:hover {
+    color: var(--color-text-negative);
+  }
+
+  .home-footer:active {
+    color: var(--gold-dark);
+  }
+}
+
+.home-footer > span {
+  font-family: 'MoonTime';
+  font-size: calc(var(--font-size) + 10px);
+  font-weight: bold;
+}

@@ -1,0 +1,64 @@
+.tab-h1 {
+  color: var(--color-text-negative);
+  text-align: center;
+  margin-top: var(--margin-adaptive);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+}
+
+.tab-h1 > * {
+  color: var(--color-text-negative);
+}
+
+.tab-content {
+  box-sizing: border-box;
+  padding: var(--padding-page-v);
+  padding-top: var(--margin-adaptive);
+}
+
+.tab-likes {
+  box-sizing: border-box;
+  padding: var(--margin-adaptive) 0 var(--padding-page-v) 0;
+}
+
+.tab-subheader {
+  margin: 0 var(--padding-page-v);
+  margin-top: var(--margin-m);
+}
+
+.tab-subheader > * {
+  margin-top: var(--margin-s);
+}
+
+.tab-info {
+  color: var(--color-second);
+  font-size: var(--font-size-s);
+}
+
+.tab-likes-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-likes-action > * {
+  color: var(--color-text-negative);
+  font-size: var(--font-size-s);
+}
+
+.tab-likes-action > .action {
+  text-decoration: underline;
+}
+
+.tab-likes-action > p:first-child,
+.tab-likes-action > p:last-child {
+  margin: 0 var(--margin-xs);
+}
+
+.tab-action-middle {
+  margin: 0 var(--margin-s);
+}

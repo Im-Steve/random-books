@@ -1,0 +1,52 @@
+.button {
+  color: var(--color-text-negative);
+  padding: 2px 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.button-cancel {
+  background-color: var(--gray);
+}
+
+.button-cancel:hover {
+  background-color: var(--gray-light);
+}
+
+.button-cancel:active {
+  background-color: var(--gray);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .button-cancel:hover {
+    background-color: var(--gray);
+  }
+
+  .button-cancel:active {
+    background-color: var(--gray-light);
+  }
+}
+
+.button-delete {
+  background-color: var(--red-dark);
+}
+
+.button-delete:hover {
+  background-color: var(--red);
+}
+
+.button-delete:active {
+  background-color: var(--red-dark);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .button-delete:hover {
+    background-color: var(--red-dark);
+  }
+
+  .button-delete:active {
+    background-color: var(--red);
+  }
+}

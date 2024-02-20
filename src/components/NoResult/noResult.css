@@ -1,0 +1,29 @@
+:root {
+  --font-size-no-result: 4vh;
+}
+
+.noResult {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--padding-page-v) var(--padding-page-h);
+  padding-bottom: var(--actionButton-space);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-page);
+}
+
+.noResult > img {
+  height: 50vh;
+  margin-bottom: var(--font-size-no-result);
+}
+
+.noResult > p {
+  font-size: var(--font-size-no-result);
+  line-height: calc(var(--font-size-no-result) + var(--line-height));
+  text-align: center;
+  color: var(--color-text-negative);
+}

@@ -1,0 +1,39 @@
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.bookForm > * {
+  margin-bottom: var(--margin-m);
+}
+
+.bookForm > :first-child {
+  margin-bottom: var(--margin-l);
+}
+
+.bookForm > :last-child {
+  margin-bottom: 0;
+}
+
+.bookForm > .input-container {
+  width: 100%;
+}
+
+.bookForm > .input-container > .label {
+  color: var(--color-text-negative);
+}
+
+.bookForm-text {
+  color: var(--color-main) !important;
+}
+
+.bookForm-search-button {
+  cursor: pointer;
+  margin-top: var(--margin-m);
+}
+
+.bookForm-search-button > img {
+  height: 350px;
+}
