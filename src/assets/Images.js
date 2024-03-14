@@ -9,6 +9,7 @@ export const imgHomeLandscape = themeImages.homeLandscape;
 export const imgLogoFacebook = themeImages.logoFacebook;
 export const imgLogoInstagram = themeImages.logoInstagram;
 export const imgLogoLinkedin = themeImages.logoLinkedin;
+export const imgLogoTiktok = themeImages.logoTiktok;
 export const imgLogoWattpad = themeImages.logoWattpad;
 export const imgLogoWattpadFull = themeImages.logoWattpadFull;
 export const imgLogoWebsite = themeImages.logoWebsite;

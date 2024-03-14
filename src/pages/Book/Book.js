@@ -6,6 +6,7 @@ import BookCard from '../../components/BookCard/BookCard';
 import BooksNavbar from '../../components/BooksNavbar/BooksNavbar';
 import fetchJson from '../../func/fetchJson';
 import { getBookDataSrc } from '../../func/getSrc';
+import PageLoading from '../../components/PageLoading/PageLoading';
 import PageNotFound from '../PageNotFound/PageNotFound';
 
 function Book() {
@@ -38,6 +39,8 @@ function Book() {
 
   return (
     <>
+      {loading && <PageLoading />}
+
       {!loading && book && (
         <>
           <BookCard book={book} />
@@ -45,6 +48,7 @@ function Book() {
           <BooksNavbar left="home" right="likes" />
         </>
       )}
+
       {!loading && !book && <PageNotFound />}
     </>
   );

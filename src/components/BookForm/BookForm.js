@@ -18,7 +18,7 @@ function BookForm() {
 
   const [mainCategory, setMainCategory] = useState(urlFilterParams.mainCategory || '');
   const [subcategory, setSubcategory] = useState(urlFilterParams.subcategory || '');
-  const [keywords, setKeywords] = useState(`${urlFilterParams.keywords ? `${urlFilterParams.keywords}, ` : ''}${urlFilterParams.author ? `${urlFilterParams.author}, ` : ''}${urlFilterParams.publisher ? `${urlFilterParams.publisher}, ` : ''}${urlFilterParams.collection ? `${urlFilterParams.collection}, ` : ''}`);
+  const [keywords, setKeywords] = useState(`${urlFilterParams.keywords && urlFilterParams.keywords[urlFilterParams.keywords.length - 1] !== ',' ? `${urlFilterParams.keywords}, ` : ''}${urlFilterParams.keywords && urlFilterParams.keywords[urlFilterParams.keywords.length - 1] === ',' ? `${urlFilterParams.keywords} ` : ''}${urlFilterParams.author ? `${urlFilterParams.author}, ` : ''}${urlFilterParams.publisher ? `${urlFilterParams.publisher}, ` : ''}${urlFilterParams.collection ? `${urlFilterParams.collection}, ` : ''}`);
   const [minOfPages, setMinOfPages] = useState(urlFilterParams.minOfPages || '');
   const [maxOfPages, setMaxOfPages] = useState(urlFilterParams.maxOfPages || '');
   const [minYear, setMinYear] = useState(urlFilterParams.minYear || '');

@@ -5,6 +5,7 @@ import {
   imgLogoFacebook,
   imgLogoInstagram,
   imgLogoLinkedin,
+  imgLogoTiktok,
   imgLogoWattpad,
 } from '../../assets/Images';
 
@@ -33,6 +34,14 @@ function SocialLink({ link }) {
           src={imgLogoLinkedin}
           alt="LinkedIn"
           title="LinkedIn"
+        />
+      )}
+      {link.includes('www.tiktok') && (
+        <img
+          className="bookCard-social-logo"
+          src={imgLogoTiktok}
+          alt="TikTok"
+          title="TikTok"
         />
       )}
       {link.includes('www.wattpad') && (

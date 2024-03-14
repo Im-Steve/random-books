@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 import ActionButtons from '../../components/ActionButtons/ActionButtons';
+import { addFeaturedContent, searchBooks, shuffleBooks } from '../../func/fetchBooks';
 import BookCard from '../../components/BookCard/BookCard';
 import BooksNavbar from '../../components/BooksNavbar/BooksNavbar';
 import getUrlFilterParams from '../../func/getUrlFilterParams';
 import NoResult from '../../components/NoResult/NoResult';
-import { addFeaturedContent, searchBooks, shuffleBooks } from '../../func/fetchBooks';
+import PageLoading from '../../components/PageLoading/PageLoading';
 import './randomizer.css';
 
 const windowHeight = window.innerHeight;
@@ -124,6 +125,9 @@ function Randomizer() {
 
   return (
     <>
+      {(!Array.isArray(bookCards) || bookCards.length === 0) && (
+        <PageLoading />
+      )}
       {Array.isArray(bookCards) && bookCards.length > 0 && (
         <>
           {bookIndex > 0 && (
