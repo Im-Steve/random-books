@@ -5,8 +5,10 @@ import {
   imgLogoFacebook,
   imgLogoInstagram,
   imgLogoLinkedin,
+  imgLogoThreads,
   imgLogoTiktok,
   imgLogoWattpad,
+  imgLogoX,
 } from '../../assets/Images';
 
 function SocialLink({ link }) {
@@ -36,6 +38,14 @@ function SocialLink({ link }) {
           title="LinkedIn"
         />
       )}
+      {link.includes('www.threads') && (
+        <img
+          className="bookCard-social-logo"
+          src={imgLogoThreads}
+          alt="Threads"
+          title="Threads"
+        />
+      )}
       {link.includes('www.tiktok') && (
         <img
           className="bookCard-social-logo"
@@ -50,6 +60,14 @@ function SocialLink({ link }) {
           src={imgLogoWattpad}
           alt="Wattpad"
           title="Wattpad"
+        />
+      )}
+      {link.includes('www.x') && (
+        <img
+          className="bookCard-social-logo"
+          src={imgLogoX}
+          alt="X"
+          title="X"
         />
       )}
     </a>
