@@ -203,11 +203,11 @@
 }
 
 .bookCard-seller-logo {
-  height: 60px;
+  height: 50px;
 }
 
 .bookCard-seller-wattpad {
-  margin-top: calc(var(--margin-m) * -1);
+  height: 40px;
 }
 
 .bookCard-details {
