@@ -1,0 +1,62 @@
+.cover-censored, .cover-censored-mini {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cover-censored-mini {
+  cursor: auto;
+}
+
+.cover-censored > :first-child {
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  height: 125px;
+  width: 125px;
+  background-color: var(--charcoal);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-censored > :last-child {
+  color: var(--gray);
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.cover-censored-mini > p {
+  color: white;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.cover-censored:hover > :first-child,
+.cover-censored:hover > :last-child {
+  color: var(--color-second);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .cover-censored:hover > :first-child {
+    color: white;
+  }
+
+  .cover-censored:hover > :last-child {
+    color: var(--gray);
+  }
+}
+
+.cover-censored:hover > :first-child,
+.cover-censored:hover > :last-child {
+  color: var(--color-second);
+}

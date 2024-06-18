@@ -1,0 +1,323 @@
+:root {
+  --margin-logo-v: 20px;
+  --margin-logo-h: 10px;
+}
+
+.bookCard {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: var(--padding-page-v);
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+
+@media (min-width: 992px) {
+  .bookCard {
+    padding-top: 0;
+    background-size: 50% auto;
+  }
+}
+
+.bookCard-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookCard > .bookCard-panel:last-child > :last-child {
+  margin-bottom: var(--actionButton-space);
+}
+
+@media (min-width: 992px) {
+  .bookCard-panel {
+    width: 50%;
+    height: calc(100vh - var(--navbar-height));
+    float: left;
+  }
+
+  .bookCard > .bookCard-panel:first-child {
+    justify-content: center;
+  }
+
+  .bookCard > .bookCard-panel:last-child {
+    box-sizing: border-box;
+    padding-top: var(--margin-md);
+    overflow-y: auto;
+  }
+}
+
+.bookCard-cover-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.bookCard-cover {
+  max-width: calc(100% - var(--padding-page-h) * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+  position: relative;
+  bottom: -1px;
+}
+
+@media (min-width: 992px) {
+  .bookCard-cover {
+    height: 80vh !important;
+    min-height: 300px !important; /* also present in CoverSection.js */
+  }
+
+  .bookCard-cover-adult {
+    height: 80vh !important;
+    width: calc(80vh * 0.65) !important; /* also present in CoverSection.js */
+    min-height: 300px !important; /* also present in CoverSection.js */
+    min-width: calc(300px * 0.65) !important; /* also present in CoverSection.js */
+  }
+}
+
+.bookCard-cover-top {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  perspective: 1000px;
+  object-position: bottom;
+}
+
+.bookCard-cover-side {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: -15px;
+  transform: rotateX(-90deg);
+  perspective: 1000px;
+}
+
+.bookCard-woodenShelf {
+  height: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.bookCard-section {
+  width: calc(100% - var(--padding-page-h) * 2);
+  margin-top: var(--margin-sm);
+  box-sizing: border-box;
+  padding: var(--margin-md) var(--padding-page-h);
+  background: var(--color-bg-text);
+  border-radius: var(--border-radius);
+}
+
+.bookCard-section > * {
+  margin-bottom: var(--margin-md);
+}
+
+.bookCard-section > :last-child {
+  margin-bottom: 0;
+}
+
+.bookCard-header > :last-child {
+  margin-top: var(--margin-xs);
+}
+
+.bookCard-authors {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.bookCard-authors > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-stars > svg {
+  font-size: 32px;
+  color: var(--gold);
+}
+
+.bookCard-categories {
+  margin-top: calc(var(--margin-md) - var(--margin-xs));
+  overflow: auto;
+}
+
+.bookCard-category, .bookCard-category:hover {
+  float: left;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-sm);
+  font-weight: bold;
+  color: var(--color-second);
+  border: 2px solid var(--color-second);
+  border-radius: 20px;
+  padding: 4px 6px;
+  margin-top: var(--margin-xs);
+  margin-right: var(--margin-xs);
+  text-decoration: none;
+}
+
+.bookCard-category-main, .bookCard-category-main:hover {
+  color: var(--color-bg-text);
+  background-color: var(--color-second);
+}
+
+.bookCard-category-featured, .bookCard-category-featured:hover {
+  color: var(--color-bg-text);
+  border: 2px solid var(--gold);
+  background-color: var(--gold);
+}
+
+.bookCard-excerpt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookCard-excerpt > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bookCard-excerpt > a > svg {
+  margin-right: var(--margin-xs);
+}
+
+.bookCard-sellers {
+  border: 5px solid var(--color-second);
+  padding: calc(var(--margin-md) - 3px) calc(var(--padding-page-h) - 3px);
+  padding-bottom: 0;
+}
+
+.bookCard-sellers > h2 {
+  margin-bottom: var(--margin-logo-v);
+}
+
+.bookCard-sellers > div {
+  margin: 0 var(--margin-logo-h) var(--margin-logo-v) var(--margin-logo-h) !important;
+}
+
+.bookCard-seller-logo {
+  height: 40px;
+}
+
+.bookCard-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookCard-details-scrollButton {
+  min-width: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookCard-details > .bookCard-details-scrollButton:last-child {
+  margin-left: auto;
+}
+
+.bookCard-details-scrollButton > svg {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.bookCard-details-scrollButton > svg:active {
+  font-size: 24px;
+}
+
+.bookCard-details-list {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.bookCard-details-list > * {
+  display: inline-block;
+  margin: 0 var(--margin-md);
+}
+
+.bookCard-details-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookCard-details-square > p {
+  max-width: 175px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookCard-details-square > svg {
+  font-size: 32px;
+}
+
+.bookCard-details-square > :first-child {
+  margin-bottom: var(--margin-xs);
+}
+
+.bookCard-details-square > svg {
+  margin-bottom: var(--margin-xs);
+}
+
+.bookCard-details-square > :last-child {
+  margin-bottom: 0;
+}
+
+.bookCard-authorBio-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.bookCard-authorBio-header > img {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: var(--padding-page-h);
+}
+
+.bookCard-authorBio-header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookCard-social {
+  padding-bottom: 0;
+}
+
+.bookCard-social > h2 {
+  margin-bottom: var(--margin-logo-v);
+}
+
+.bookCard-social-logo {
+  float: left;
+  height: 40px; /* min 21px to comply with brand guidelines */
+  /* for margin top, height divided by 2 to comply with brand guidelines */
+  /* for margin side, height divided by 4 to comply with brand guidelines */
+  margin: 0 var(--margin-logo-h) var(--margin-logo-v) var(--margin-logo-h);
+}
+
+.bookCard-social-linktree {
+  height: 30px;
+  padding: 5px 0;
+}
+
+.bookCard-iframe {
+  padding: 12px var(--margin-xs) 0 var(--margin-xs);
+}

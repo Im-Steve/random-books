@@ -1,0 +1,22 @@
+:root {
+  --modal-duration: 0.4s;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--shadow);
+  z-index: 999;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container > * {
+  position: relative;
+  margin: auto;
+  animation: zoomIn var(--modal-duration) forwards;
+}

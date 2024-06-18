@@ -1,0 +1,83 @@
+.booksNavbar-arrow {
+  color: var(--color-icon-nav);
+  height: var(--navbar-icon-height);
+  width: auto;
+  z-index: 902;
+}
+
+.booksNavbar-icon-left,
+.booksNavbar-icon-right,
+.booksNavbar-arrow-left,
+.booksNavbar-arrow-right {
+  position: fixed;
+}
+
+.booksNavbar-icon-left, .booksNavbar-icon-right {
+  top: var(--navbar-box-margin);
+}
+
+.booksNavbar-arrow-left, .booksNavbar-arrow-right {
+  top: calc((var(--navbar-height) - var(--navbar-icon-height)) / 2);
+}
+
+@media (max-width: 768px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 5px);
+  }
+
+  .booksNavbar-icon-right {
+    right: calc((var(--navbar-icon-height) / 2) + 5px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 5px;
+  }
+
+  .booksNavbar-arrow-right {
+    right: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 50px + 3px);
+  }
+
+  .booksNavbar-icon-right {
+    right: calc((var(--navbar-icon-height) / 2) + 50px + 3px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 50px;
+  }
+
+  .booksNavbar-arrow-right {
+    right: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 75px + 3px);
+  }
+
+  .booksNavbar-icon-right {
+    right: calc((var(--navbar-icon-height) / 2) + 75px + 3px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 75px;
+  }
+
+  .booksNavbar-arrow-right {
+    right: 75px;
+  }
+}
+
+.icon-filter-open {
+  color: var(--color-second);
+}
+
+.icon-likes-open {
+  color: var(--red);
+}

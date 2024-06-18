@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  :root {
+    --font-size-404: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --font-size-404: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size-404: 30px;
+  }
+}
+
+.pageNotFound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 var(--padding-page-h);
+}
+
+.pageNotFound > img {
+  max-width: 75vw;
+  max-height: 50vh;
+  object-fit: contain;
+  margin-bottom: var(--font-size-404);
+}
+
+.pageNotFound > p {
+  font-size: var(--font-size-404);
+  line-height: calc(var(--font-size-404) + var(--line-height));
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,58 @@
+.button {
+  color: black;
+  text-align: center;
+  max-width: 175px;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+}
+
+.button-mini {
+  padding: 2px 10px;
+  border-radius: var(--border-radius);
+  border: none !important;
+}
+
+.button-accept {
+  background-color: var(--gold);
+}
+
+.button-accept:hover {
+  background-color: var(--gold-light);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .button-accept:hover {
+    background-color: var(--gold);
+  }
+
+  .button-accept:active {
+    background-color: var(--gold-light);
+  }
+}
+
+.button-cancel {
+  color: var(--color-text);
+  background-color: var(--color-bg-text);
+  border: 2px solid black;
+}
+
+.button-delete {
+  background-color: var(--red);
+}
+
+.button-delete:hover {
+  background-color: var(--red-light);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .button-delete:hover {
+    background-color: var(--red);
+  }
+
+  .button-delete:active {
+    background-color: var(--red-light);
+  }
+}

@@ -1,0 +1,18 @@
+.pageLoading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-page);
+  z-index: 800;
+  cursor: wait;
+}
+
+.pageLoading > * {
+  background-color: var(--shadow);
+  border-radius: var(--border-radius);
+  padding: var(--margin-sm)
+}

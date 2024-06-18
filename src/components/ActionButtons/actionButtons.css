@@ -1,0 +1,216 @@
+.actionButton-box {
+  height: var(--actionButton-height);
+  width: var(--actionButton-height);
+  position: fixed;
+  bottom: var(--actionButton-bottom);
+  z-index: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionButton-box-like {
+  left: calc(50vw + var(--actionButton-margin));
+}
+
+.actionButton-box-dislike {
+  right: calc(50vw + var(--actionButton-margin));
+}
+
+.actionButton-box-back {
+  right: calc(50vw + var(--actionButton-height) + var(--actionButton-margin));
+}
+
+.actionButton-box-share {
+  left: calc(50vw + var(--actionButton-height) + var(--actionButton-margin));
+}
+
+.actionButton-box-center {
+  left: calc(50vw - var(--actionButton-height) / 2);
+}
+
+.actionButton-box-back-center {
+  right: calc(50vw + var(--actionButton-height) / 2);
+}
+
+.actionButton-box-share-center {
+  left: calc(50vw + var(--actionButton-height) / 2);
+}
+
+.actionButton-box > * {
+  color: var(--color-icon-nav);
+  background-color: var(--color-icon-bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.actionButton-box > :hover {
+  background-color: var(--color-icon-bg-active);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-box > :hover {
+    background-color: var(--color-icon-bg);
+  }
+}
+
+.actionButton-box > :active {
+  background-color: var(--color-icon-bg-active);
+}
+
+.actionButton-like,
+.actionButton-dislike,
+.actionButton-home {
+  height: 95%;
+  width: 95%;
+}
+
+.actionButton-like:hover,
+.actionButton-dislike:hover,
+.actionButton-home:hover {
+  height: 100%;
+  width: 100%;
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-like:hover,
+  .actionButton-dislike:hover,
+  .actionButton-home:hover {
+    height: 95%;
+    width: 95%;
+  }
+}
+
+.actionButton-like:active,
+.actionButton-dislike:active,
+.actionButton-home:active {
+  height: 85%;
+  width: 85%;
+}
+
+.actionButton-back, .actionButton-share {
+  height: 75%;
+  width: 75%;
+}
+
+.actionButton-back:active, .actionButton-share:active {
+  height: 65%;
+  width: 65%;
+}
+
+.actionButton-box > * > * {
+  height: 50%;
+  width: auto;
+}
+
+.actionButton-home {
+  text-decoration: none;
+}
+
+.actionButton-like:hover {
+  background-color: var(--red);
+}
+
+.actionButton-dislike:hover {
+  background-color: var(--magenta);
+}
+
+.actionButton-share:hover {
+  background-color: var(--blue);
+}
+
+.actionButton-home:hover {
+  background-color: var(--color-main);
+  color: var(--color-icon-nav);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-like:hover,
+  .actionButton-dislike:hover,
+  .actionButton-share:hover,
+  .actionButton-main:hover {
+    background-color: var(--color-icon-bg);
+  }
+
+  .actionButton-like-single:hover {
+    background-color: var(--red);
+  }
+}
+
+.actionButton-like:active {
+  background-color: var(--red);
+}
+
+.actionButton-dislike:active {
+  background-color: var(--magenta);
+}
+
+.actionButton-share:active {
+  background-color: var(--blue);
+}
+
+.actionButton-home:active {
+  background-color: var(--color-main);
+  color: var(--color-icon-nav);
+}
+
+.actionButton-like-on {
+  background-color: var(--red) !important;
+  height: 95% !important;
+  width: 95% !important;
+  cursor: auto !important;
+}
+
+.actionButtons-popup {
+  position: fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.actionButtons-popup-heart {
+  position: relative;
+  color: var(--red);
+  animation: popupHeart 0.75s forwards;
+}
+
+.actionButtons-popup-share {
+  background-color: var(--shadow);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: var(--margin-sm);
+}
+
+@keyframes popupHeart {
+  0% {
+    width: 0;
+    height: 0;
+    rotate: 0;
+    top: 0;
+  }
+  20% {
+    rotate: 30deg;
+  }
+  40% {
+    rotate: -30deg;
+  }
+  60% {
+    width: 25vw;
+    height: 25vh;
+    rotate: 0;
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}

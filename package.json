@@ -1,0 +1,63 @@
+{
+  "name": "random-books",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://www.bookyverse.com/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "copy-404": "node copy-404.js",
+    "pre-release": "npm install && npm run lint && npm outdated",
+    "pre-deploy": "npm run build && npm run copy-404"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "7.34.2",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "gh-pages": "6.1.1"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "6.4.6",
+    "@testing-library/react": "16.0.0",
+    "@testing-library/user-event": "14.5.2",
+    "fs-extra": "11.2.0",
+    "i18next": "23.11.5",
+    "i18next-browser-languagedetector": "8.0.0",
+    "i18next-http-backend": "2.5.2",
+    "postcss": "8.4.38",
+    "prop-types": "15.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-i18next": "14.1.2",
+    "react-icons": "5.2.1",
+    "react-loading": "2.0.3",
+    "react-router-dom": "6.23.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "4.1.1"
+  }
+}

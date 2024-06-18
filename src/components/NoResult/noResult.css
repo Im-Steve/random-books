@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  :root {
+    --font-size-no-result: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root {
+    --font-size-no-result: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size-no-result: 30px;
+  }
+}
+
+.noResult {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: var(--padding-page-v) var(--padding-page-h) var(--actionButton-space) var(--padding-page-h);
+}
+
+.noResult > img {
+  height: calc(100% - var(--font-size-no-result) * 3 - var(--line-height) * 3);
+  margin-bottom: var(--font-size-no-result);
+}
+
+.noResult > p {
+  font-size: var(--font-size-no-result);
+  line-height: calc(var(--font-size-no-result) + var(--line-height));
+  text-align: center;
+  color: white;
+}
