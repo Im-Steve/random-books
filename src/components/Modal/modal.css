@@ -1,0 +1,51 @@
+:root {
+  --modal-anim-duration: 0.4s;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: var(--shadow);
+  z-index: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container > * {
+  position: relative;
+  margin: auto;
+  animation: zoomIn var(--modal-anim-duration) forwards;
+}
+
+.modal {
+  width: 450px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: var(--margin-md);
+  background-color: var(--color-bg-text);
+}
+
+.modal-header {
+  font-size: var(--font-size-h2);
+  line-height: calc(var(--font-size-h2) + var(--font-line-height));
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.modal-bottom {
+  margin: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-bottom > * {
+  margin: var(--margin-sm);
+}

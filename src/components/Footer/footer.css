@@ -1,0 +1,9 @@
+.footer > p {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    background-color: var(--color-bg-text-light);
+  }
+}

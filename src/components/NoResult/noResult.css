@@ -1,0 +1,43 @@
+@media (max-width: 750px) {
+  :root {
+    --no-result-font-size: 25px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  :root {
+    --no-result-font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --no-result-font-size: 30px;
+  }
+}
+
+.noResult {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: var(--margin-lg) var(--page-padding-w) var(--actionButton-space) var(--page-padding-w);
+  background-color: var(--color-bg-page);
+}
+
+.noResult > img {
+  height: calc(100% - (var(--no-result-font-size) * 2) - (var(--font-line-height) * 2) - (var(--margin-md) * 2));
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: var(--margin-md);
+}
+
+.noResult > p {
+  font-size: var(--no-result-font-size);
+  line-height: calc(var(--no-result-font-size) + var(--font-line-height));
+  text-align: center;
+  color: white;
+}

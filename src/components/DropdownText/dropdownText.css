@@ -1,0 +1,32 @@
+.dropdownText-container {
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+  position: relative;
+}
+
+.dropdownText-container > p > * {
+  margin-bottom: var(--margin-xs);
+}
+
+.dropdownText-container > p > :last-child {
+  margin-bottom: 0;
+}
+
+.dropdownText-fade {
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 0%, #ffffff);
+  z-index: 1;
+}
+
+.dropdownText-toggle {
+  display: inline-block;
+}
+
+.dropdownText-toggle > p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Parisienne';
+  src: url('/fonts/Parisienne-Regular.ttf') format('truetype');
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'MoonTime';
+  src: url('/fonts/MoonTime-Regular.ttf') format('truetype');
+  font-display: block;
+}

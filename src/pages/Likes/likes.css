@@ -1,0 +1,24 @@
+.likes {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.likes > div {
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  padding-bottom: var(--page-padding-bottom);
+}
+
+.button-back-likes {
+  margin-top: var(--margin-sm);
+  margin-bottom: calc(-1 * var(--margin-lg) + var(--margin-sm));
+  margin-left: var(--page-padding-w);
+}
+
+@media (min-width: 992px) {
+  .button-back-likes {
+    margin-top: var(--margin-md);
+  }
+}

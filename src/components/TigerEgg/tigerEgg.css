@@ -1,0 +1,16 @@
+.tigerEgg {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: var(--margin-lg) var(--page-padding-w) calc(var(--actionButton-space) + var(--margin-sm)) var(--page-padding-w);
+  background-color: var(--color-bg-page);
+}
+
+.tigerEgg > img {
+  height: 100%;
+  object-fit: contain;
+}

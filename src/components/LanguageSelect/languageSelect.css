@@ -1,0 +1,21 @@
+.language-select {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: calc(var(--font-size-sm) + var(--font-line-height));
+  height: calc(var(--font-size-sm) + var(--font-line-height) + 6px);
+  box-sizing: border-box;
+  padding: 3px 10px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.language-select:focus {
+  border: none;
+  outline: none;
+}
+
+.language-select-icon {
+  color: white;
+  font-size: 22px;
+  margin-right: var(--margin-xs);
+}

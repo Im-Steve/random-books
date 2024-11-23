@@ -1,0 +1,64 @@
+.image-censored, .image-censored-mini {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-censored, .image-censored-mini-clickable {
+  cursor: pointer;
+}
+
+.image-censored > :first-child {
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  height: 125px;
+  width: 125px;
+  background-color: var(--charcoal);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-censored > :last-child {
+  color: var(--gray);
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.image-censored-mini > p {
+  color: white;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.image-censored:hover > :first-child,
+.image-censored:hover > :last-child,
+.image-censored-mini-clickable:hover > :first-child {
+  color: var(--color-second);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .image-censored:hover > :first-child,
+  .image-censored-mini-clickable:hover > :first-child {
+    color: white;
+  }
+
+  .image-censored:hover > :last-child {
+    color: var(--gray);
+  }
+}
+
+.image-censored:active > :first-child,
+.image-censored:active > :last-child,
+.image-censored-mini-clickable:active > :first-child {
+  color: var(--color-second);
+}
