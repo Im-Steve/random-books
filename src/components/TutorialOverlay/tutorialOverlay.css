@@ -1,0 +1,29 @@
+.tutorialOverlay-section {
+  width: calc(100% - (var(--page-padding-w) * 2));
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: var(--margin-md);
+  background-color: black;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.tutorialOverlay-header {
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: var(--margin-md);
+}
+
+.tutorialOverlay-text {
+  color: white;
+  font-size: var(--font-size-sm);
+  text-align: center;
+  margin-bottom: var(--margin-md);
+}

@@ -1,0 +1,341 @@
+.home-bg {
+  position: fixed;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  z-index: -1;
+}
+
+.home {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: var(--margin-lg) var(--page-padding-w);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home > * {
+  margin-bottom: var(--margin-md);
+}
+
+.home > :last-child {
+  margin-bottom: 0;
+}
+
+.home-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-h1 > p {
+  font-family: 'Parisienne';
+  color: var(--color-main);
+  text-shadow: var(--box-shadow-dark);
+}
+
+.home-h2 {
+  margin-bottom: var(--margin-xs);
+}
+
+.home-h2 > p {
+  font-family: 'MoonTime';
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px var(--color-second), 0 0 70px var(--color-second), 0 0 80px var(--color-second), 0 0 100px var(--color-second), 0 0 150px var(--color-second);
+}
+
+.home-h1 > img {
+  filter: drop-shadow(var(--box-shadow-dark));
+}
+
+@media (max-width: 750px) {
+  .home-h1 > p {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  .home-h1 > img {
+    width: 60px;
+    height: 65px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+
+  .home-h2 > p {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  .home-h1 > p {
+    font-size: 100px;
+    line-height: 110px;
+  }
+
+  .home-h1 > img {
+    width: 95px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 15px;
+  }
+
+  .home-h2 > p {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-h1 > p {
+    font-size: 120px;
+    line-height: 140px;
+  }
+
+  .home-h1 > img {
+    width: 110px;
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  .home-h2 > p {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+.home-form {
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: var(--margin-md);
+  padding-top: calc(var(--margin-md) - 5px);
+  border-radius: var(--border-radius);
+  background-color: var(--shadow);
+  box-shadow: var(--box-shadow-dark);
+}
+
+.home-footer {
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: var(--margin-sm);
+  border-radius: var(--border-radius);
+  background-color: var(--shadow);
+  box-shadow: var(--box-shadow-dark);
+  text-align: center;
+}
+
+.home-footer > a {
+  color: white;
+  text-decoration: none !important;
+}
+
+.home-footer > a:hover {
+  color: var(--color-main);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .home-footer > a:hover {
+    color: white;
+  }
+
+  .home-footer > a:active {
+    color: var(--color-main);
+  }
+}
+
+.home-footer > a > span {
+  font-family: 'MoonTime';
+  font-size: calc(var(--font-size) + 12px);
+  margin-left: 3px;
+}
+
+.home-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+.home-footer-links-icon {
+  color: white;
+  font-size: 25px;
+  margin: var(--margin-sm);
+}
+
+.home-footer-links-icon:hover {
+  color: var(--color-main);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .home-footer-links-icon:hover {
+    color: white;
+  }
+
+  .home-footer-links-icon:active {
+    color: var(--color-main);
+  }
+}
+
+.home-footer-links-img {
+  height: 25px;
+}
+
+.home-footer-links-linktree {
+  height: 20px;
+  filter: invert(100%);
+}
+
+.home-footer-links-linktree:hover {
+  filter: invert(50%);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .home-footer-links-linktree:hover {
+    filter: invert(100%);
+  }
+
+  .home-footer-links-linktree:active {
+    filter: invert(50%);
+  }
+}
+
+.home-icon {
+  position: fixed;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--color-icon-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-dark);
+}
+
+.home-icon > * {
+  color: var(--color-icon-nav);
+}
+
+.home-icon:hover {
+  background-color: var(--color-icon-bg-active);
+}
+
+.home-icon:active {
+  background-color: var(--color-icon-bg);
+}
+
+.home-language {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-language > .language-select {
+  filter: drop-shadow(var(--box-shadow-dark));
+}
+
+.home-language > svg {
+  filter: drop-shadow(var(--box-shadow-dark));
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .home-icon:hover {
+    background-color: var(--color-icon-bg);
+  }
+
+  .home-icon:active {
+    background-color: var(--color-icon-bg-active);
+  }
+}
+
+@media (max-width: 750px) {
+  .home-icon {
+    height: var(--navbar-box-height);
+    width: var(--navbar-box-height);
+  }
+
+  .home-icon > * {
+    height: var(--navbar-icon-height);
+    width: var(--navbar-icon-height);
+  }
+
+  .home-icon-likes {
+    top: 20px;
+    left: calc(100vw - var(--navbar-box-height) - var(--page-padding-w));
+  }
+
+  .home-icon-settings {
+    top: 20px;
+    left: calc(100vw - (var(--navbar-box-height) * 2) - (var(--page-padding-w) * 2));
+  }
+
+  .home-language {
+    top: 20px;
+    left: var(--page-padding-w);
+  }
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  .home-icon {
+    height: var(--navbar-box-height);
+    width: var(--navbar-box-height);
+  }
+
+  .home-icon > * {
+    height: var(--navbar-icon-height);
+    width: var(--navbar-icon-height);
+  }
+
+  .home-icon-likes {
+    top: 20px;
+    left: calc(100vw - var(--navbar-box-height) - 25px);
+  }
+
+  .home-icon-settings {
+    top: 20px;
+    left: calc(100vw - var(--navbar-box-height) - 25px - var(--navbar-box-height) - 15px);
+  }
+
+  .home-language {
+    top: 20px;
+    left: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .home-icon > * {
+    height: 30px;
+    width: 30px;
+  }
+
+  .home-icon-likes {
+    top: 20px;
+    left: calc(100vw - 60px - 110px);
+  }
+
+  .home-icon-settings {
+    top: 20px;
+    left: calc(100vw - 60px - 110px - 60px - 15px);
+  }
+
+  .home-language {
+    top: 35px;
+    left: 110px;
+  }
+}

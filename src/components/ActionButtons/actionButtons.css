@@ -1,0 +1,225 @@
+.actionButton-box {
+  height: var(--actionButton-height);
+  width: var(--actionButton-height);
+  position: fixed;
+  bottom: var(--actionButton-bottom);
+  z-index: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionButton-box-like {
+  left: calc(50vw + var(--actionButton-margin));
+}
+
+.actionButton-box-dislike {
+  left: calc(50vw - var(--actionButton-height) - var(--actionButton-margin))
+}
+
+.actionButton-box-back {
+  left: calc(50vw - (var(--actionButton-height) * 2) - var(--actionButton-margin))
+}
+
+.actionButton-box-share {
+  left: calc(50vw + var(--actionButton-height) + var(--actionButton-margin));
+}
+
+.actionButton-box-center {
+  left: calc(50vw - (var(--actionButton-height) / 2));
+}
+
+.actionButton-box-back-center {
+  left: calc(50vw - (var(--actionButton-height) / 2) - var(--actionButton-height));
+}
+
+.actionButton-box-share-center {
+  left: calc(50vw + (var(--actionButton-height) / 2));
+}
+
+.actionButton-box > * {
+  color: var(--color-icon-nav);
+  background-color: var(--color-icon-bg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.actionButton-box > :hover {
+  background-color: var(--color-icon-bg-active);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-box > :hover {
+    background-color: var(--color-icon-bg);
+  }
+}
+
+.actionButton-box > :active {
+  background-color: var(--color-icon-bg-active);
+}
+
+.actionButton-share > * {
+  position: relative;
+  left: -1.5px;
+  top: 0.5px;
+}
+
+.actionButton-like,
+.actionButton-dislike,
+.actionButton-home {
+  height: 95%;
+  width: 95%;
+}
+
+.actionButton-like:hover,
+.actionButton-dislike:hover,
+.actionButton-home:hover {
+  height: 100%;
+  width: 100%;
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-like:hover,
+  .actionButton-dislike:hover,
+  .actionButton-home:hover {
+    height: 95%;
+    width: 95%;
+  }
+}
+
+.actionButton-like:active,
+.actionButton-dislike:active,
+.actionButton-home:active {
+  height: 85%;
+  width: 85%;
+}
+
+.actionButton-back, .actionButton-share {
+  height: 75%;
+  width: 75%;
+}
+
+.actionButton-back:active, .actionButton-share:active {
+  height: 65%;
+  width: 65%;
+}
+
+.actionButton-box > * > * {
+  height: 50%;
+  width: auto;
+}
+
+.actionButton-home {
+  text-decoration: none !important;
+}
+
+.actionButton-like:hover {
+  background-color: var(--color-like);
+}
+
+.actionButton-dislike:hover {
+  background-color: var(--color-dislike);
+}
+
+.actionButton-share:hover {
+  background-color: var(--color-share);
+}
+
+.actionButton-home:hover {
+  background-color: var(--color-main);
+  color: var(--color-icon-nav);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .actionButton-like:hover,
+  .actionButton-dislike:hover,
+  .actionButton-share:hover,
+  .actionButton-home:hover {
+    background-color: var(--color-icon-bg);
+  }
+
+  .actionButton-like-single:hover {
+    background-color: var(--color-like);
+  }
+}
+
+.actionButton-like:active {
+  background-color: var(--color-like);
+}
+
+.actionButton-dislike:active {
+  background-color: var(--color-dislike);
+}
+
+.actionButton-share:active {
+  background-color: var(--color-share);
+}
+
+.actionButton-home:active {
+  background-color: var(--color-main);
+  color: var(--color-icon-nav);
+}
+
+.actionButton-like-on {
+  background-color: var(--color-like) !important;
+  height: 95% !important;
+  width: 95% !important;
+  cursor: auto !important;
+}
+
+.actionButtons-popup {
+  position: fixed;
+  top : 0;
+  left: 0;
+  height: calc(100dvh - var(--actionButton-bottom));
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.actionButtons-popup-heart {
+  position: relative;
+  color: var(--color-like);
+  animation: popupHeart 0.75s forwards;
+  filter: drop-shadow(var(--box-shadow));
+}
+
+.actionButtons-popup-share {
+  background-color: var(--shadow);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: var(--margin-sm);
+}
+
+@keyframes popupHeart {
+  0% {
+    width: 0vw;
+    height: 0vh;
+    rotate: 0deg;
+    top: 0;
+  }
+  20% {
+    rotate: 30deg;
+  }
+  40% {
+    rotate: -30deg;
+  }
+  60% {
+    width: 22vw;
+    height: 15vh;
+    rotate: 0deg;
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}

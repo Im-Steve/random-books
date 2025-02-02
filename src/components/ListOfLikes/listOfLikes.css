@@ -1,0 +1,151 @@
+:root {
+  --likedBook-cover-width: 80px;
+  --likedBook-cover-padding: var(--margin-sm);
+  --likedBook-padding-w: var(--margin-md);
+  --likedBook-trashCan-size: 25px;
+}
+
+.likedBook-container {
+  position: relative;
+  height: 125px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 var(--likedBook-padding-w) 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.likedBook {
+  height: 100%;
+  width: calc(100% - 42px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.likedBook-container:hover {
+  background-color: var(--color-bg-page-elem-hover);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .likedBook-container:hover {
+    background-color: transparent;
+  }
+
+  .likedBook:active {
+    background-color: var(--color-bg-page-elem-hover);
+  }
+}
+
+.likedBook-index {
+  color: white;
+  font-size: var(--font-size-sm);
+  line-height: var(--font-size-sm);
+  text-align: center;
+  min-width: 25px;
+}
+
+.likedBook-cover {
+  height: 95%;
+  width: var(--likedBook-cover-width);
+  object-fit: contain;
+  object-position: left;
+  margin-right: var(--likedBook-cover-padding);
+}
+
+.likedBook-info {
+  width: calc(100% - var(--likedBook-cover-width) - var(--likedBook-cover-padding) - var(--likedBook-padding-w) - var(--likedBook-trashCan-size));
+}
+
+.likedBook-info > p {
+  color: white;
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.likedBook-info > .p2 {
+  -webkit-line-clamp: 1;
+  line-clamp: 1
+}
+
+.likedBook-trashCan {
+  color: var(--shadow-white);
+  font-size: var(--likedBook-trashCan-size);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.likedBook-container:hover > .likedBook-trashCan {
+  visibility: visible;
+}
+
+.likedBook-trashCan:hover {
+  background-color: var(--color-icon-bg);
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .likedBook-trashCan {
+    visibility: visible;
+  }
+
+  .likedBook-trashCan:hover {
+    background-color: transparent;
+  }
+}
+
+.likedBook-trashCan:active {
+  background-color: var(--color-icon-bg-active);
+}
+
+.likedBook-deletion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 var(--margin-sm);
+  background-color: var(--shadow);
+}
+
+.likedBook-deletion > p {
+  color: white;
+  text-align: center;
+}
+
+.likedBook-deletion > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.likedBook-deletion > div > * {
+  margin: var(--margin-sm);
+}
+
+.likedBook-end {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin-md);
+}

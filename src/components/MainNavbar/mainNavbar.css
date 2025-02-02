@@ -1,0 +1,49 @@
+.mainNavbar-space {
+  height: var(--navbar-height);
+  width: 100vw;
+}
+
+.mainNavbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--navbar-height);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-navbar);
+  z-index: 800;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mainNavbar-fixed > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.mainNavbar-logo {
+  height: calc(var(--navbar-height) / 2);
+  margin-right: 8px;
+}
+
+.mainNavbar-title {
+  font-family: 'Parisienne';
+  color: var(--color-main);
+  font-size: calc(var(--navbar-height) / 2);
+  line-height: calc(var(--navbar-height) / 2);
+}
+
+.mainNavbar-top-overlay {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg-navbar);
+  z-index: 1000;
+}

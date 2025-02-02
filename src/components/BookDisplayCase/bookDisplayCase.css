@@ -1,0 +1,109 @@
+.bookDisplayCase-bg {
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  z-index: -1;
+}
+
+.bookDisplayCase {
+  width: 100%;
+}
+
+.bookDisplayCase-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 auto 0;
+}
+
+.bookDisplayCase-content > .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bookDisplayCase-case {
+  width: 175px;
+  box-sizing: border-box;
+  padding: var(--margin-sm);
+}
+
+.bookDisplayCase-cover {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.bookDisplayCase-cover:hover {
+  transform: scale(1.05);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .bookDisplayCase-cover:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .bookDisplayCase-cover {
+    width: calc(100% - var(--border-line) - var(--border-line));
+    border: var(--border-line) solid transparent;
+  }
+
+  .bookDisplayCase-cover:active {
+    border: var(--border-line) solid var(--color-second);
+  }
+}
+
+.bookDisplayCase-cover-adult {
+  height: 250px;
+  width: 100%;
+}
+
+.bookDisplayCase-book-title {
+  font-size: var(--font-size-sm);
+  line-height: calc(var(--font-size-sm) + 5px);
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.bookDisplayCase-book-authors {
+  font-size: var(--font-size-xs);
+  line-height: calc(var(--font-size-xs) + 3px);
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.bookDisplayCase-case > a {
+  color: var(--color-text);
+}
+
+.bookDisplayCase-case:hover > a {
+  text-decoration: underline;
+}
+
+/* Media query for touchscreens */
+@media (hover: none) {
+  .bookDisplayCase-case:hover > a {
+    text-decoration: none;
+  }
+}
+
+.bookDisplayCase-case:active > a {
+  text-decoration: underline;
+}

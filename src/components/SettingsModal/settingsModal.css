@@ -1,0 +1,22 @@
+.modal-settings > * {
+  margin: var(--margin-md);
+}
+
+.modal-settings > .modal-header {
+  margin-bottom: var(--margin-lg);
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-section > label {
+  margin: 0;
+}
+
+.settings-param-name {
+  width: calc(100% - 56px - var(--margin-md));
+}

@@ -1,0 +1,96 @@
+.booksNavbar-arrow {
+  color: var(--color-icon-nav);
+  height: var(--navbar-icon-height);
+  width: auto;
+  z-index: 802;
+}
+
+.booksNavbar-icon-left,
+.booksNavbar-icon-left-2,
+.booksNavbar-icon-right,
+.booksNavbar-arrow-left,
+.booksNavbar-arrow-right {
+  position: fixed;
+}
+
+.booksNavbar-icon-left, .booksNavbar-icon-left-2, .booksNavbar-icon-right {
+  top: var(--navbar-box-margin);
+}
+
+.booksNavbar-arrow-left, .booksNavbar-arrow-right {
+  top: calc((var(--navbar-height) - var(--navbar-icon-height)) / 2);
+}
+
+@media (max-width: 750px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 2px);
+  }
+
+  .booksNavbar-icon-left-2 {
+    left: calc((var(--navbar-icon-height) * 2) + 2px);
+  }
+
+  .booksNavbar-icon-right {
+    left: calc(100vw - var(--navbar-box-height) - (var(--navbar-icon-height) / 2) - 2px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 2px;
+  }
+
+  .booksNavbar-arrow-right {
+    left: calc(100vw - var(--navbar-icon-height) - 2px);
+  }
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 50px + 3px);
+  }
+
+  .booksNavbar-icon-left-2 {
+    left: calc((var(--navbar-icon-height) * 2) + 75px);
+  }
+
+  .booksNavbar-icon-right {
+    left: calc(100vw - var(--navbar-box-height) - (var(--navbar-icon-height) / 2) - 50px - 3px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 50px;
+  }
+
+  .booksNavbar-arrow-right {
+    left: calc(100vw - var(--navbar-icon-height) - 50px);
+  }
+}
+
+@media (min-width: 992px) {
+  .booksNavbar-icon-left {
+    left: calc((var(--navbar-icon-height) / 2) + 75px + 3px);
+  }
+
+  .booksNavbar-icon-left-2 {
+    left: calc((var(--navbar-icon-height) * 2) + 100px);
+  }
+
+  .booksNavbar-icon-right {
+    left: calc(100vw - var(--navbar-box-height) - (var(--navbar-icon-height) / 2) - 75px - 3px);
+  }
+
+  .booksNavbar-arrow-left {
+    left: 75px;
+  }
+
+  .booksNavbar-arrow-right {
+    left: calc(100vw - var(--navbar-icon-height) - 75px);
+  }
+}
+
+.icon-filter-open {
+  color: var(--color-second);
+}
+
+.icon-likes-open {
+  color: var(--color-like);
+}

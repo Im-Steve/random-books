@@ -1,0 +1,25 @@
+{
+  "short_name": "Bookyverse",
+  "name": "Bookyverse",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icons/logo192x192-v2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/logo512x512-v2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2b2a33",
+  "background_color": "#1c1b22"
+}

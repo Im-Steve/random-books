@@ -1,0 +1,40 @@
+.bookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookForm > * {
+  margin-bottom: var(--margin-md);
+}
+
+.bookForm > :last-child {
+  margin-bottom: 0;
+}
+
+.bookForm > .input-container {
+  width: 100%;
+}
+
+.bookForm > .input-container > label, .bookForm > .input-container > .label {
+  color: white;
+}
+
+.bookForm-text {
+  color: var(--color-main) !important;
+  width: 100%;
+  margin-top: var(--margin-sm);
+}
+
+.bookForm-text-label {
+  margin-top: 0;
+}
+
+.bookForm-search-button {
+  cursor: pointer;
+  margin-top: var(--margin-md);
+}
+
+.bookForm-search-button > img {
+  height: 350px;
+}

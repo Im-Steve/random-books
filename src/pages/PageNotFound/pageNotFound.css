@@ -1,0 +1,43 @@
+@media (max-width: 750px) {
+  :root {
+    --font-size-404: 25px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 992px) {
+  :root {
+    --font-size-404: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-size-404: 30px;
+  }
+}
+
+.pageNotFound {
+  height: calc(100dvh - var(--navbar-height));
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 var(--page-padding-w);
+}
+
+.pageNotFound > img {
+  width: 75vw;
+  height: 50dvh;
+  object-fit: contain;
+  margin-bottom: var(--font-size-404);
+}
+
+.pageNotFound > p {
+  font-size: var(--font-size-404);
+  line-height: calc(var(--font-size-404) + var(--font-line-height));
+  text-align: center;
+  color: white;
+  margin-bottom: calc(var(--navbar-height) / 2);
+}

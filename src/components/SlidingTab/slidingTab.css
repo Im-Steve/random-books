@@ -1,0 +1,29 @@
+:root {
+  --slidingTab-anim-duration: 0.5s;
+}
+
+.slidingTab-overlay {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  height: calc(100dvh - var(--navbar-height));
+  width: 100vw;
+  background-color: var(--shadow);
+  z-index: 800;
+  animation: fadeIn var(--slidingTab-anim-duration) forwards;
+}
+
+.slidingTab {
+  position: fixed;
+  top: var(--navbar-height);
+  height: calc(100dvh - var(--navbar-height));
+  width: 100vw;
+  max-width: 500px; /* also present in SlidingTab.js */
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-bottom: var(--page-padding-bottom);
+  background-color: var(--color-bg-page);
+  z-index: 801;
+  transition: left var(--slidingTab-anim-duration), right var(--slidingTab-anim-duration);
+}
